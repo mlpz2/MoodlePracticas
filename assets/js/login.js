@@ -1,18 +1,11 @@
 const passwordInput = document.getElementById('password');
-
+const togglePasswordButton = document.getElementById('toggle-password');
+togglePasswordButton.addEventListener('click', () => {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    togglePasswordButton.textContent = type === 'password' ? 'Mostrar' : 'Ocultar';
+});
 const loginButton = document.getElementById('login-btn');
-
-<!-- Script para guardar el estado del checkbox -->
-
-function guardarEstadoCheckbox() {
-    var checkbox = document.getElementById("mi_checkbox");
-    localStorage.setItem("checkbox_estado", checkbox.checked);
-}
-
-// Establecer el estado del checkbox al cargar la página
-var checkbox = document.getElementById("remember-password");
-checkbox.checked = localStorage.getItem("checkbox_estado") === "true";
-
 loginButton.addEventListener('click', () => {
     const username = document.getElementById('username').value;
     const password = passwordInput.value;
@@ -20,7 +13,7 @@ loginButton.addEventListener('click', () => {
         alert('Ingrese usuario y contraseña');
     } else if (username === 'admin' && password === 'admin') {
         alert('Bienvenido');
-        window.location.href = "inicio.html";
+
     } else {
         alert('Usuario o contraseña incorrectos');
     }
@@ -32,7 +25,7 @@ $(document).ready(function() {
     if (token) {
         // si hay un token, inicie sesión automáticamente y redirija al usuario a la página principal
         loginWithToken(token);
-        window.location.href = "inicio.html";
+        window.location.href = "pagina-principal.html";
     }
 
     // cuando se hace clic en el botón de inicio de sesión
@@ -43,7 +36,7 @@ $(document).ready(function() {
             var password = $('#password-input').val();
             localStorage.setItem('password', password);
             var token = generateToken();
-            setCookie('session-token', token, 2147483647);
+            setCookie('session-token', token, 7);
         }
         // inicie sesión con la contraseña ingresada y redirija al usuario a la página principal
         loginWithPassword(password);
