@@ -20,7 +20,7 @@ loginButton.addEventListener('click', () => {
         alert('Ingrese usuario y contraseña');
     } else if (username === 'admin' && password === 'admin') {
         alert('Bienvenido');
-        window.location.href = "inicio.html";
+        window.location.href = "/inicio.html";
     } else {
         alert('Usuario o contraseña incorrectos');
     }
@@ -53,6 +53,19 @@ $(document).ready(function() {
     // función para iniciar sesión con una contraseña
     function loginWithPassword(password) {
         // código para iniciar sesión con la contraseña
+        loginButton.addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            const password = passwordInput.value;
+            if (username === '' || password === '') {
+                alert('Ingrese usuario y contraseña');
+            } else if (username === 'admin' && password === 'admin') {
+                alert('Bienvenido');
+                window.location.href = "/inicio.html";
+            } else {
+                alert('Usuario o contraseña incorrectos');
+            }
+        });
+
     }
 
     // función para iniciar sesión con un token de sesión
