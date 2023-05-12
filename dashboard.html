@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Página de inicio de Moodle</title>
+    <title>Notas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Inicio</a>
+    <a class="navbar-brand" href="#">Notas</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="dashboard.html">Notas</a>
+                <a class="nav-link" href="/inicio.html">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#todo">Todo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#notif">Notificaciones</a>
+                <a class="nav-link" href="/inicio.html#notif">Notificaciones</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#conf">Configuración</a>
@@ -33,66 +33,56 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 sidebar">
-            <div class="list-group" id="notif">
+            <div class="list-group" id="todo">
                 <a href="#" class="list-group-item list-group-item-action active">
-                    Notificaciones
+                    Tareas
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">Notificación 1</a>
-                <a href="#" class="list-group-item list-group-item-action">Notificación 2</a>
-                <a href="#" class="list-group-item list-group-item-action">Notificación 3</a>
-                <a href="#" class="list-group-item list-group-item-action">Notificación 4</a>
+                <a href="#" class="list-group-item list-group-item-action">Tarea 1</a>
+                <a href="#" class="list-group-item list-group-item-action">Tarea 2</a>
+                <a href="#" class="list-group-item list-group-item-action">Tarea 3</a>
             </div>
         </div>
         <div class="col-lg-9 col-md-8 col-sm-6">
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="assets/img/5z9TV_9v.jpg" alt="This-Person-Does-not-Exist.com" class="img-fluid rounded-circle">
-                </div>
-                <div class="col-sm-9">
-                    <h1>Pepita Valdemoro</h1>
-                    <p>Nota media: 8,5</p>
-                </div>
-            </div>
+                <div class="col-lg-9 col-md-8 col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="assets/src/5z9TV_9v2.jpg" alt="This-Person-Does-not-Exist.com" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col-sm-9">
+                            <h1>Pepita Valdemoro</h1>
+                            <p>Nota media: 8,5</p>
+                        </div>
+                    </div>
             <h2>Cursos</h2>
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Asignaturas</th>
-                    <th>Nota</th>
+                    <th>Curso</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-
-                    <td>Castellano</td>
-
-
-                    <td>8,2</td>
+                    <td>Course 1</td>
+                    <td>Subject 1</td>
+                    <td>85%</td>
                 </tr>
                 <tr>
-                    <td>Matemáticas</td>
-                    <td>9,1</td>
+                    <td>Course 2</td>
+                    <td>Subject 2</td>
+                    <td>90%</td>
                 </tr>
                 <tr>
-                    <td>Ciencias A</td>
-                    <td>7,5</td>
-                </tr>
-                <tr>
-                    <td>Asignatura 4</td>
-                    <td>8,9</td>
+                    <td>Course 3</td>
+                    <td>Subject 3</td>
+                    <td>80%</td>
                 </tr>
                 </tbody>
             </table>
-            <h2 id="todo">Todo</h2>
-            <ul>
-                <li>Tarea 1</li>
-                <li>Tarea 2</li>
-                <li>Tarea 3</li>
-                <li>Tarea 4</li>
-                <li>Tarea 5</li>
-            </ul>
         </div>
     </div>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
