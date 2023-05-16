@@ -1,15 +1,31 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { BrowserModule } from '@angular/platform-browser';
 
-const routes: Routes = [
-  { path: '', component: WelcomeComponent },
-  { path: 'login', component: LoginComponent },
-  // Add more routes as needed
-];
+import { AppComponent } from './app.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ReportComponent } from './report/report.component';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [
+    AppComponent,
+    ProfileComponent,
+    HomeComponent,
+    LoginComponent,
+    NotificationsComponent,
+    ReportComponent
+  ],
+  imports: [
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserModule,
+    FormsModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppRoutingModule { }
+export class AppModule { }
