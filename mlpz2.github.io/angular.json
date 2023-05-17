@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mlpz2.github.io": {
+    "proyecto-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mlpz2.github.io",
+            "outputPath": "dist/proyecto-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mlpz2.github.io:build:production"
+              "browserTarget": "proyecto-angular:build:production"
             },
             "development": {
-              "browserTarget": "mlpz2.github.io:build:development"
+              "browserTarget": "proyecto-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mlpz2.github.io:build"
+            "browserTarget": "proyecto-angular:build"
           }
         },
         "test": {
