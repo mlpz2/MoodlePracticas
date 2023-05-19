@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "skipLibCheck": true,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -23,7 +24,7 @@
       "ES2022",
       "dom"
     ],
-    "types": ["bootstrap"]
+    "types": ["@ng-bootstrap/ng-bootstrap", "mocha", "jest", "jasmine", "node"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

@@ -1,21 +1,24 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
-import { BrowserModule } from '@angular/platform-browser';
+import {bootstrapApplication, BrowserModule} from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-// @ts-ignore
 import { RouterModule, Routes } from '@angular/router';
+import {NgxPopperjsModule} from 'ngx-popperjs';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
-    AppComponent,
+    AppComponent
   ],
+  exports: [[RouterModule],AppComponent],
   imports: [
-    [RouterModule.forRoot()],
+    [RouterModule],
     ReactiveFormsModule,
     BrowserModule,
     FormsModule,
+    NgxPopperjsModule,
+    NgbModule
   ],
-  exports: [RouterModule],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: []
 })
 export class AppRoutingModule { }

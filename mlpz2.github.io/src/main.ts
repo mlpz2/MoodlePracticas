@@ -1,8 +1,8 @@
+/// <reference types="@angular/localize" />
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 // La clase Usuario
 class Usuario {
   static contador: number = 0;

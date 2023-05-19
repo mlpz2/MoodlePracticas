@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xsi:schemaLocation="https://mlpz2.github.io/login.html" xmlns="https://mlpz2.github.io/login.html" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        >
+<!--suppress XmlHighlighting -->
+<urlset xsi:schemaLocation="https://mlpz2.github.io" xmlns="https://mlpz2.github.io"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <url>
-        <loc>https://mlpz2.github.io/login.html</loc>
+        <loc>https://mlpz2.github.io</loc>
     </url>
 </urlset>
