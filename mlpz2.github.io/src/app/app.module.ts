@@ -7,7 +7,7 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {RouterOutlet} from "@angular/router";
 @NgModule({
   declarations: [
-
+AppComponent
 
 
 ],
@@ -22,6 +22,6 @@ import {RouterOutlet} from "@angular/router";
 
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
