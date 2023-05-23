@@ -4,6 +4,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #676856;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .login-btn {
   font-size: 2rem;
@@ -28,5 +35,6 @@ body {
   padding-left: 2rem;
   padding-bottom: 1rem;
   align-items: center;
+
 
 }

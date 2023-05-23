@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {RouterModule} from "@angular/router";
+import {AuthService} from "./auth.service";
 
 import { AppComponent } from './app.component';
 import { PerfilAlumnoComponent } from './components/perfil-alumno/perfil-alumno.component';
@@ -10,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { MensajeComponent } from './mensaje/mensaje.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgOptimizedImage} from "@angular/common";
 
 
 
@@ -26,9 +29,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgOptimizedImage,
+    RouterModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
