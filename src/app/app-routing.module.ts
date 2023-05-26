@@ -5,9 +5,11 @@ import { ReportComponent } from './report/report.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import {LoginComponent} from "./login/login.component";
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: 'login', pathMatch: 'full'},
+  { path: '',   redirectTo: 'bienvenida', pathMatch: 'full'},
+  { path: 'bienvenida', component: BienvenidaComponent},
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent},
   { path: 'report', component: ReportComponent},

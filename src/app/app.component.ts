@@ -6,8 +6,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyecto-angular';
-  // Para que el menu desplegable cierre al hacer click con routerlink
+  // Cierra la barra de navegación
   @ViewChild('navbarCollapse', { static: false}) navbarCollapse!: ElementRef;
   cerrarMenu() {
     this.navbarCollapse?.nativeElement.classList.remove('show');
