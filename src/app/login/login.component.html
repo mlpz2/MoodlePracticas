@@ -1,0 +1,13 @@
+<meta title="Iniciar sesión" lang="es">
+
+<div class="col-auto container" style="display: block;overflow: visible;background: rgba(255,255,255,0.25);filter: grayscale(0%);padding-bottom: 69px;border-style: none;border-bottom-color: rgb(255,255,255);border-radius: 0;">
+  <main class="col-md-6 mx-auto">
+    <form (ngSubmit)="loginUser()" novalidate #loginForm="ngForm" class="d-flex float-none form-container" style="background: rgb(255,255,255);backdrop-filter: opacity(0);-webkit-backdrop-filter: opacity(0);margin-bottom: -52px;margin-top: -40px;border-style: none;border-color: rgb(255,255,255);border-bottom-style: hidden;border-radius: 0;">
+      <div class="col-auto text-center form-group"><img class="img-fluid d-block mx-auto" src="assets\img\user.png" alt="Logo" width="122" height="122" style="border-radius: 100%;"></div>
+          <input type="text" id="username" placeholder="Usuario" class="form-control form-container me-1 mb-1" name="username" [(ngModel)]="username" required>
+          <input type="password" id="password" placeholder="Contraseña" class="form-control form-container me-1 mb-1" style="text-align: left;position: relative;border-radius: 0;border: 1px solid rgb(194,194,194);background: #D9D9D9;box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.25);padding-left: 3px;" name="password" [(ngModel)]="password" required>
+      <div><br><input type="submit" class="me-1 mb-1 btn-lg text-center btn login-btn btn-dark" [defaultChecked]="!loginForm.valid" value="Enviar" onclick="ngDestroy()"></div><br>
+      <div class="col-auto form-group form-check"><input type="checkbox" class="form-check-input" id="remember-password" style="border-radius: 0;border: 1px none rgb(176,176,176);border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;margin-top: 16px;" [(ngModel)]="RememberPassword"><label class="form-label form-check-label" for="remember-password" style="margin-top: 21px;">Recordar contraseña</label></div>
+    </form>
+  </main>
+</div>
